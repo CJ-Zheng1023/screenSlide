@@ -1,0 +1,7 @@
+body,html{
+    height: 100%;
+    overflow: hidden;
+}
+.screen-slide-container,.screen-slide-container .section{
+    height: 100%;
+}

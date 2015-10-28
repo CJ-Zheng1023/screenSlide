@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>full screen slide</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.screenSlide.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+    <div class="screen-slide-container" id="container">
+        <div class="section">
+            <h3>title1</h3>
+            <p>content content content</p>
+        </div>
+        <div class="section">
+            <h3>title2</h3>
+            <p>content content content</p>
+        </div>
+        <div class="section">
+            <h3>title3</h3>
+            <p>content content content</p>
+        </div>
+        <div class="section">
+            <h3>title4</h3>
+            <p>content content content</p>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery.screenSlide.js"></script>
+    <script>
+        $(function(){
+            $("#container").screenSlide();
+        })
+    </script>
+</body>
+</html>
