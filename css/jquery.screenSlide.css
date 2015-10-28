@@ -5,3 +5,24 @@ body,html{
 .screen-slide-container,.screen-slide-container .section{
     height: 100%;
 }
+.screen-slide-page{
+    position: fixed;
+    top: 45%;
+    right:5%;
+    list-style: none;
+}
+.screen-slide-page li{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+.screen-slide-page li.active{
+    width: 14px;
+    height: 14px;
+    border: 2px solid #fffe00;
+    background: none;
+    margin-left: 0px;
+}
