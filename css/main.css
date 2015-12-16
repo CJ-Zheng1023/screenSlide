@@ -34,3 +34,7 @@
     background-color: #000;
     text-align: center;
 }
+.screen-slide-container .section p{
+    font-size: 30px;
+    margin-top: 300px;
+}
