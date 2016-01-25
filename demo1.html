@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>full screen slide</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.screenSlide.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+<div class="screen-slide-container" id="container">
+    <div class="section" style="background-image: url('css/img/1.jpg')">
+        <h3>title1</h3>
+        <p>建议在IE10+，高版本谷歌，火狐浏览器浏览</p>
+        <p>使用鼠标滚轮或者方向键翻页</p>
+        <div class="code-wrappder">
+            <h2>配置规则</h2>
+            <code>
+                $(选择器).screenSlide({<br>
+                duration:      滑动效果持续时间（默认500ms）<br>
+                easing：    滑动效果（linear,ease,ease-in,ease-out,ease-in-out  默认ease）<br>
+                loop：      是否循环（默认true）<br>
+                keyboard ： 是否键盘触发滑动效果（默认true）<br>
+                index:      初始页面展示图片的索引（默认1）<br>
+                direction： 水平或者垂直滑动（默认vertical【垂直】   horizontal【水平】）<br>
+                afterSlide： 滑动之后的回调函数<br>
+
+                })<br>
+            </code>
+        </div>
+
+
+    </div>
+    <div class="section" style="background-image: url('css/img/2.jpg')">
+        <h3>title2</h3>
+        <p>使用鼠标滚轮或者方向键翻页</p>
+    </div>
+    <div class="section" style="background-image: url('css/img/3.jpg')">
+        <h3>title3</h3>
+        <p>使用鼠标滚轮或者方向键翻页</p>
+    </div>
+    <div class="section" style="background-image: url('css/img/4.jpg')">
+        <h3>title4</h3>
+        <p>使用鼠标滚轮或者方向键翻页</p>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/jquery.screenSlide.js"></script>
+<script>
+    $(function(){
+        $("#container").screenSlide({
+            direction:"vertical",
+            loop:true
+        });
+    })
+</script>
+</body>
+</html>
